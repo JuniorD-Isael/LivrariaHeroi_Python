@@ -2,6 +2,8 @@ from typing import Dict, Type
 
 
 class SingletonMeta(type):
+    """Singleton metaclass para ser usada em classes que devem ter apenas uma instância"""
+
     _instances: Dict[Type, object] = {}
 
     def __call__(cls, *args, **kwargs):

@@ -6,6 +6,12 @@ from src.util.singleton import SingletonMeta
 
 
 class Biblioteca(metaclass=SingletonMeta):
+    """ Classe que representa a biblioteca
+    Atributos:
+        livros: Dict[int, Livro] - Dicionário de livros
+        usuarios: Dict[int, Pessoa] - Dicionário de usuários
+        alugueis: Dict[int, Aluguel] - Dicionário de alugueis
+    """
     livros: Dict[int, Livro]
     usuarios: Dict[int, Pessoa]
     alugueis: Dict[int, Aluguel]
