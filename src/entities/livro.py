@@ -1,13 +1,14 @@
 from dataclasses import dataclass
+from src.interfaces.alugavel import Alugavel
 
 
 @dataclass
-class Livro:
+class Livro(Alugavel):
     id: int
     titulo: str
     autor: str
     ano: int
-    alugado: bool
+    alugado: bool = False
 
     def get_alugado(self) -> bool:
         return self.alugado

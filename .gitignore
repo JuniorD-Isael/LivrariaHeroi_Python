@@ -3,5 +3,6 @@
 __pycache__
 *.pyc
 *.pyo
+mypy.ini
 .mypy_cache
 *.egg-info
